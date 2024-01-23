@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Avatar } from "@chakra-ui/avatar";
 import { Tooltip } from "@chakra-ui/tooltip";
 import ScrollableFeed from "react-scrollable-feed";
@@ -11,9 +12,15 @@ import { ChatState } from "../Context/ChatProvider";
 
 const ScrollableChat = ({ messages }) => {
   const { user } = ChatState();
+  const chatContainerRef = useRef(null);
+
+  useEffect(() => {
+    // Scroll to the bottom when messages change
+    chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+  }, [messages]);
 
   return (
-    <ScrollableFeed>
+    <div ref={chatContainerRef} style={{ overflowY: "auto", maxHeight: "400px" }}>
       {messages &&
         messages.map((m, i) => (
           <div style={{ display: "flex" }} key={m._id}>
@@ -46,7 +53,7 @@ const ScrollableChat = ({ messages }) => {
             </span>
           </div>
         ))}
-    </ScrollableFeed>
+    </div>
   );
 };
 
