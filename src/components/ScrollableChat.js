@@ -20,7 +20,7 @@ const ScrollableChat = ({ messages }) => {
   }, [messages]);
 
   return (
-    <div ref={chatContainerRef} style={{ overflowY: "auto", maxHeight: "400px" }}>
+    <div ref={chatContainerRef} style={{ overflowY: "auto", maxHeight : "100%" }}>
       {messages &&
         messages.map((m, i) => (
           <div style={{ display: "flex" }} key={m._id}>
