@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Spinner, Text, Tooltip, border, useDisclosure, useToast } from '@chakra-ui/react'
+import { Avatar, Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Spinner, Text, Tooltip, useDisclosure, useToast } from '@chakra-ui/react'
 import { BellIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import React, { useState } from 'react'
 import { ChatState } from '../../Context/ChatProvider'
@@ -115,7 +115,13 @@ const SideDrawer = () => {
         <div>
           <Menu>
             <MenuButton p={1}>
-              <BellIcon fontSize={"2xl"} m={1} />
+              {
+                notification.length > 0 ? 
+                <BellIcon fontSize={"2xl"} m={1} color={"red"} /> 
+                :
+                <BellIcon fontSize={"2xl"} m={1} /> 
+
+              }
             </MenuButton>
             <MenuList pl={2}>
               {!notification.length && "No New Messages"}
