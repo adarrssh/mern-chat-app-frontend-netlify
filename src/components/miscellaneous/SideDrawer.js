@@ -111,7 +111,7 @@ const SideDrawer = () => {
           </Button>
         </Tooltip>
 
-        <Text fontSize={"2xl"} fontFamily={"Work sans"}>Chit-Chat-Central</Text>
+        <Text fontSize={"2xl"} fontFamily={"Work sans"}>My-Chat-App</Text>
         <div>
           <Menu>
             <MenuButton p={1}>
