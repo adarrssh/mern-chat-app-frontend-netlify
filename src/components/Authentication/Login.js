@@ -73,6 +73,8 @@ const Signup = () => {
                     placeholder="Enter You Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    focusBorderColor='#FF6464'
+
                 />
             </FormControl>
             <FormControl id='password' isRequired>
@@ -83,6 +85,7 @@ const Signup = () => {
                         placeholder="Enter You password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        focusBorderColor='#FF6464'
                     />
                     <InputRightElement width="4.5rem">
                         <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -92,22 +95,26 @@ const Signup = () => {
                 </InputGroup>
             </FormControl>
             <Button
-                colorScheme="blue"
                 width="100%"
+                backgroundColor={'#FF6464'}
+                color={'white'}
                 style={{ marginTop: 15 }}
                 onClick={submitHandler}
                 isLoading={picLoading}
+                _hover={{bg:'white', color:'#FF6464', border : '1px'}}
             >
                 Login
             </Button>
             <Button
-                variant="solid"
-                colorScheme="red"
+                variant="outline"
+                borderColor={"#FF6464"}
+                colorScheme='black'
                 width="100%"
                 onClick={() => {
                     setEmail("guest@example.com");
                     setPassword("123456");
                 }}
+                _hover={{color:'white', bg:'#FF6464', border : '1px'}}
             >
                 Get Guest User Credentials
             </Button>

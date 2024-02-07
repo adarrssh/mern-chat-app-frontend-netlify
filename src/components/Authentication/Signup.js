@@ -131,6 +131,8 @@ const Signup = () => {
                 <Input
                     placeholder="Enter You Name"
                     onChange={(e) => setName(e.target.value)}
+                    focusBorderColor='#FF6464'
+
                 />
             </FormControl>
             <FormControl id='email' isRequired>
@@ -138,6 +140,8 @@ const Signup = () => {
                 <Input
                     placeholder="Enter You Email"
                     onChange={(e) => setEmail(e.target.value)}
+                    focusBorderColor='#FF6464'
+
                 />
             </FormControl>
             <FormControl id='password' isRequired>
@@ -147,6 +151,8 @@ const Signup = () => {
                         type={show ? 'text' : 'password'}
                         placeholder="Enter You password"
                         onChange={(e) => setPassword(e.target.value)}
+                        focusBorderColor='#FF6464'
+
                     />
                     <InputRightElement width="4.5rem">
                         <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -162,6 +168,8 @@ const Signup = () => {
                         type={show ? "text" : "password"}
                         placeholder="Confirm password"
                         onChange={(e) => setConfirmpassword(e.target.value)}
+                        focusBorderColor='#FF6464'
+
                     />
                     <InputRightElement width="4.5rem">
                         <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -180,11 +188,14 @@ const Signup = () => {
                 />
             </FormControl>
             <Button
-                colorScheme="blue"
+                backgroundColor="#FF6464"
+                color={'white'}
                 width="100%"
                 style={{ marginTop: 15 }}
                 onClick={submitHandler}
                 isLoading={picLoading}
+                _hover={{backgroundColor:'white', color:'#FF6464', border : '1px'}}
+
             >
                 Sign Up
             </Button>

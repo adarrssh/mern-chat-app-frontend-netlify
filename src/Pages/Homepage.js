@@ -31,12 +31,12 @@ const HomePage = () => {
       <Box color={"black"} bg={"white"} w={"100%"} p={4} borderRadius={"lg"} borderWidth={"1px"}>
       <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">
-            <Tab width={"50%"}>Login</Tab>
-            <Tab width={"50%"}>Sign Up</Tab>
+            <Tab  width={"50%"} _selected={{bg:'#FF6464', color:"white"}} color={"#FF6464"}>Login</Tab>
+            <Tab width={"50%"}  _selected={{bg:'#FF6464', color:"white"}} color={"#FF6464"} >Sign Up</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
-              <Login/>
+              <Login />
             </TabPanel>
             <TabPanel>
               <Signup />
