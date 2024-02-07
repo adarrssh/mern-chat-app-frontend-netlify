@@ -26,13 +26,13 @@ const HomePage = () => {
       borderRadius={"lg"}
       borderWidth={"1px"}
       >
-        <Text fontSize="4xl" fontFamily={'Work sans'} color={"black"}>Talk-A-Tive</Text>
+        <Text fontSize="4xl" fontFamily={'Work sans'} color={"black"}>Chit-Chat-Central</Text>
       </Box>
       <Box color={"black"} bg={"white"} w={"100%"} p={4} borderRadius={"lg"} borderWidth={"1px"}>
       <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">
-            <Tab  width={"50%"} _selected={{bg:'#FF6464', color:"white"}} color={"#FF6464"}>Login</Tab>
-            <Tab width={"50%"}  _selected={{bg:'#FF6464', color:"white"}} color={"#FF6464"} >Sign Up</Tab>
+            <Tab  width={"50%"} _selected={{bg:'#F7A4A7', color:"white"}} color={"#FF6464"}>Login</Tab>
+            <Tab width={"50%"}  _selected={{bg:'#F7A4A7', color:"white"}} color={"#FF6464"} >Sign Up</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

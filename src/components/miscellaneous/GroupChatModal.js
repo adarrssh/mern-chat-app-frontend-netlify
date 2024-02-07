@@ -140,6 +140,7 @@ const GroupChatModal = ({ children }) => {
                             <Input
                                 placeholder="Chat Name"
                                 mb={3}
+                                focusBorderColor='#F18184'
                                 onChange={(e) => setGroupChatName(e.target.value)}
                             />
                         </FormControl>
@@ -147,6 +148,7 @@ const GroupChatModal = ({ children }) => {
                             <Input
                                 placeholder="Add Users eg: "
                                 mb={1}
+                                focusBorderColor='#F18184'
                                 onChange={(e) => handleSearch(e.target.value)}
                             />
                         </FormControl>
@@ -173,7 +175,19 @@ const GroupChatModal = ({ children }) => {
                     </ModalBody>
 
                     <ModalFooter>
-                        <Button colorScheme='blue' onClick={handleSubmit}>
+                        <Button 
+                        backgroundColor='#F18184'
+                        color={'black'}
+                        _hover={{
+                            border:'1px',
+                            borderColor:'#F18184',
+                            backgroundColor:'white',
+                            color:'#F18184'
+
+
+                        }}
+                        fontWeight={"500"}
+                         onClick={handleSubmit}>
                             Create Chat
                         </Button>
                     </ModalFooter>

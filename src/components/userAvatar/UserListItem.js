@@ -10,8 +10,8 @@ const UserListItem = ({ user, handleFunction }) => {
       cursor="pointer"
       bg="#E8E8E8"
       _hover={{
-        background: "#38B2AC",
-        color: "white",
+        background: "#F7A4A7",
+        color: "black",
       }}
       w="100%"
       d="flex"

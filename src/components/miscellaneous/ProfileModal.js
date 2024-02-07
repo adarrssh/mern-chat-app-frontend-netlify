@@ -63,7 +63,18 @@ const ProfileModal = ({ user, children }) => {
                     </ModalBody>
 
                     <ModalFooter>
-                        <Button colorScheme='blue' mr={3} onClick={onClose}>
+                        <Button 
+                        border={'1px'}
+                        borderColor={'#F7A4A7'}
+                        backgroundColor='white' 
+                        color={'black'}
+                        _hover={{
+                            backgroundColor:'white',
+                            color:'#F18184',
+                            border:'1px',
+                            borderColor:'#F18184'
+                        }}
+                        mr={3} onClick={onClose}>
                             Close
                         </Button>
                     </ModalFooter>

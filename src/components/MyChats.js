@@ -76,9 +76,16 @@ const MyChats = ( {fetchAgain}) => {
     <GroupChatModal>
 
     <Button
+     backgroundColor={"white"}
+     border={"1px"}
+     borderColor={"#F18184"}
      display={"flex"}
      fontSize={{base:"17px",md:"10px",lg:"17px"}}
      rightIcon={<AddIcon/>}
+     _hover={{
+      backgroundColor:'#F7A4A7',
+      color:'white'
+     }}
      >
       New Group Chat
     </Button>
@@ -106,12 +113,17 @@ const MyChats = ( {fetchAgain}) => {
             <Box
             onClick={() => setSelectedChat(chat)}
             cursor="pointer"
-            bg={selectedChat === chat ? "#38B2AC" : "#E8E8E8"}
-            color={selectedChat === chat ? "white" : "black"}
+            border={"1px"}
+            borderColor={"#F7A4A7"}
+            
+            bg={selectedChat === chat ? "#F7A4A7" : "white"}
             px={3}
             py={2}
             borderRadius="lg"
             key={chat._id}
+            _hover={{
+              backgroundColor:'#F7A4A7'
+            }}
             >
               <Text>
                 {!chat.isGroupChat ? getSender(loggedUser,chat.users) : (chat.chatName)}

@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Spinner, Text, Tooltip, useDisclosure, useToast } from '@chakra-ui/react'
+import { Avatar, Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Spinner, Text, Tooltip, border, useDisclosure, useToast } from '@chakra-ui/react'
 import { BellIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import React, { useState } from 'react'
 import { ChatState } from '../../Context/ChatProvider'
@@ -111,7 +111,7 @@ const SideDrawer = () => {
           </Button>
         </Tooltip>
 
-        <Text fontSize={"2xl"} fontFamily={"Work sans"}>Talk-A-Tive</Text>
+        <Text fontSize={"2xl"} fontFamily={"Work sans"}>Chit-Chat-Central</Text>
         <div>
           <Menu>
             <MenuButton p={1}>
@@ -166,9 +166,18 @@ const SideDrawer = () => {
                 placeholder='Search by name or email'
                 mr={2}
                 value={search}
+                focusBorderColor='#F7A4A7'
                 onChange={(e) => setSearch(e.target.value)}
               />
               <Button
+                border={"1px"}
+                borderColor={"#F7A4A7"}
+                backgroundColor={"white"}
+                _hover={
+                 {
+                  backgroundColor:'white',
+                  color:'#F7A4A7'
+                 }}
                 onClick={handleSearch}
               >Go</Button>
             </Box>
