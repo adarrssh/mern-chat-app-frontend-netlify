@@ -131,7 +131,7 @@ const Signup = () => {
                 <Input
                     placeholder="Enter You Name"
                     onChange={(e) => setName(e.target.value)}
-                    focusBorderColor='#FF6464'
+                    focusBorderColor='#6f4fb3'
 
                 />
             </FormControl>
@@ -140,7 +140,7 @@ const Signup = () => {
                 <Input
                     placeholder="Enter You Email"
                     onChange={(e) => setEmail(e.target.value)}
-                    focusBorderColor='#FF6464'
+                    focusBorderColor='#6f4fb3'
 
                 />
             </FormControl>
@@ -151,7 +151,7 @@ const Signup = () => {
                         type={show ? 'text' : 'password'}
                         placeholder="Enter You password"
                         onChange={(e) => setPassword(e.target.value)}
-                        focusBorderColor='#FF6464'
+                        focusBorderColor='#6f4fb3'
 
                     />
                     <InputRightElement width="4.5rem">
@@ -168,7 +168,7 @@ const Signup = () => {
                         type={show ? "text" : "password"}
                         placeholder="Confirm password"
                         onChange={(e) => setConfirmpassword(e.target.value)}
-                        focusBorderColor='#FF6464'
+                        focusBorderColor='#6f4fb3'
 
                     />
                     <InputRightElement width="4.5rem">
@@ -188,13 +188,13 @@ const Signup = () => {
                 />
             </FormControl>
             <Button
-                backgroundColor="#FF6464"
+                backgroundColor={'#6f4fb3'}
                 color={'white'}
                 width="100%"
                 style={{ marginTop: 15 }}
                 onClick={submitHandler}
                 isLoading={picLoading}
-                _hover={{backgroundColor:'white', color:'#FF6464', border : '1px'}}
+                _hover={{bg:'white', color:'#6f4fb3', border : '1px', borderColor:'#6f4fb3'}}
 
             >
                 Sign Up

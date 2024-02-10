@@ -230,13 +230,18 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
                         >
                             <Input
                             placeholder="Chat Name"
+                            focusBorderColor='#6f4fb3'
+
                             mb={3}
                             value={groupChatName}
                             onChange={(e)=> setGroupChatName(e.target.value)}
                             />
                             <Button
-                            variant={"solid"}
-                            colorScheme='teal'
+                              backgroundColor='white'
+                              color='#6f4fb3'
+                              border = '1px'
+                              borderColor='#6f4fb3'
+                              _hover={{ bg:'#6f4fb3', color:'white' , border : '1px', borderColor:'#6f4fb3'}}
                             ml={1}
                             isLoading={renameLoading}
                             onClick={handleRename}
@@ -250,6 +255,8 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
                             <Input
                             placeholder='Add User to group'
                             mb={1}
+                            focusBorderColor='#6f4fb3'
+
                             onChange={(e)=> handleSearch(e.target.value)}
                             />
                         </FormControl>
@@ -271,7 +278,13 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
                     </ModalBody>
 
                     <ModalFooter>
-                        <Button onClick={() => handleRemove(user)} colorScheme='red'>
+                        <Button onClick={() => handleRemove(user)} 
+                          backgroundColor='white'
+                          color='#6f4fb3'
+                          border = '1px'
+                          borderColor='#6f4fb3'
+                          _hover={{ bg:'#6f4fb3', color:'white' , border : '1px', borderColor:'#6f4fb3'}}
+                        >
                             Leave Group
                         </Button>
                     </ModalFooter>

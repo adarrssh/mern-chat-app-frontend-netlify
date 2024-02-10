@@ -73,7 +73,7 @@ const Signup = () => {
                     placeholder="Enter You Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    focusBorderColor='#FF6464'
+                    focusBorderColor='#6f4fb3'
 
                 />
             </FormControl>
@@ -85,7 +85,7 @@ const Signup = () => {
                         placeholder="Enter You password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        focusBorderColor='#FF6464'
+                        focusBorderColor='#6f4fb3'
                     />
                     <InputRightElement width="4.5rem">
                         <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -96,25 +96,25 @@ const Signup = () => {
             </FormControl>
             <Button
                 width="100%"
-                backgroundColor={'#FF6464'}
+                backgroundColor={'#6f4fb3'}
                 color={'white'}
                 style={{ marginTop: 15 }}
                 onClick={submitHandler}
                 isLoading={picLoading}
-                _hover={{bg:'white', color:'#FF6464', border : '1px'}}
+                _hover={{bg:'white', color:'#6f4fb3', border : '1px', borderColor:'#6f4fb3'}}
             >
                 Login
             </Button>
             <Button
                 variant="outline"
-                borderColor={"#FF6464"}
-                colorScheme='black'
+                borderColor={"#6f4fb3"}
+                color='#6f4fb3'
                 width="100%"
                 onClick={() => {
                     setEmail("guest@example.com");
                     setPassword("123456");
                 }}
-                _hover={{color:'white', bg:'#FF6464', border : '1px'}}
+                _hover={{color:'white', bg:'#6f4fb3', border : '1px', borderColor:'#6f4fb3'}}
             >
                 Get Guest User Credentials
             </Button>

@@ -78,12 +78,12 @@ const MyChats = ( {fetchAgain}) => {
     <Button
      backgroundColor={"white"}
      border={"1px"}
-     borderColor={"#F18184"}
+     borderColor={"#6f4fb3"}
      display={"flex"}
      fontSize={{base:"17px",md:"10px",lg:"17px"}}
      rightIcon={<AddIcon/>}
      _hover={{
-      backgroundColor:'#F7A4A7',
+      backgroundColor:'#6f4fb3',
       color:'white'
      }}
      >
@@ -114,15 +114,16 @@ const MyChats = ( {fetchAgain}) => {
             onClick={() => setSelectedChat(chat)}
             cursor="pointer"
             border={"1px"}
-            borderColor={"#F7A4A7"}
-            
-            bg={selectedChat === chat ? "#F7A4A7" : "white"}
+            borderColor={"#6f4fb3"}
+            bg={selectedChat === chat ? "#6f4fb3" : "white"}
+            color={selectedChat === chat ? "white" : "black"}
             px={3}
             py={2}
             borderRadius="lg"
             key={chat._id}
             _hover={{
-              backgroundColor:'#F7A4A7'
+              backgroundColor:'#6f4fb3',
+              color:"white"
             }}
             >
               <Text>

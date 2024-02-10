@@ -172,17 +172,17 @@ const SideDrawer = () => {
                 placeholder='Search by name or email'
                 mr={2}
                 value={search}
-                focusBorderColor='#F7A4A7'
+                focusBorderColor='#6f4fb3'
                 onChange={(e) => setSearch(e.target.value)}
               />
               <Button
                 border={"1px"}
-                borderColor={"#F7A4A7"}
+                borderColor={'#6f4fb3'}
                 backgroundColor={"white"}
                 _hover={
                  {
-                  backgroundColor:'white',
-                  color:'#F7A4A7'
+                  backgroundColor:'#6f4fb3',
+                  color:'white'
                  }}
                 onClick={handleSearch}
               >Go</Button>

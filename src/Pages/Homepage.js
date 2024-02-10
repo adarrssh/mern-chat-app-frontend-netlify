@@ -31,8 +31,8 @@ const HomePage = () => {
       <Box color={"black"} bg={"white"} w={"100%"} p={4} borderRadius={"lg"} borderWidth={"1px"}>
       <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">
-            <Tab  width={"50%"} _selected={{bg:'#F7A4A7', color:"white"}} color={"#FF6464"}>Login</Tab>
-            <Tab width={"50%"}  _selected={{bg:'#F7A4A7', color:"white"}} color={"#FF6464"} >Sign Up</Tab>
+            <Tab  width={"50%"} _selected={{bg:'#876dc0', color:"white"}} color={"black"}>Login</Tab>
+            <Tab width={"50%"}  _selected={{bg:'#876dc0', color:"white"}} color={"black"} >Sign Up</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
