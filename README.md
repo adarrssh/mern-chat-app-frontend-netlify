@@ -27,7 +27,7 @@
 # Usage
 
 - Start the backend server: `cd backend && node server.js`
-- Start the frontend application: `&& npm start`
+- Start the frontend application: `npm start`
 - Open your web browser and navigate to [http://localhost:3000](http://localhost:3000)
 - Register or log in to start using the chat application on your local machine
 
