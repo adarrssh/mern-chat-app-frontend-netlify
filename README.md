@@ -2,6 +2,8 @@
 
  This is a real time chatting application.
 
+ Live link - https://my-chattinng-app.netlify.app/
+
  <img width="1431" alt="Screenshot 2024-02-19 at 4 09 36 PM" src="https://github.com/adarrssh/webRtc-frontend/assets/85433137/8a0faaf9-79a6-44c2-83b9-81913bb7efcd">
 
 
